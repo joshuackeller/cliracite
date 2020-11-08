@@ -41,7 +41,7 @@
 <hr class="myline">
 </div>
 <router-view />
-  <footer class="page-footer text-center py-3">This is a link to my githup repository: <a class="link" href="https://github.com/joshuackeller/racite1.git">https://github.com/joshuackeller/racite1.git</a></footer>
+  <footer class="page-footer text-center py-3">This is a link to my githup repository: <a class="link" href="https://github.com/joshuackeller/cliracite.git">https://github.com/joshuackeller/cliracite.git</a></footer>
 </div>
 </template>
 
