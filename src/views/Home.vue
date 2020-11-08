@@ -30,7 +30,9 @@
       race? If you answered yes to any of those questions,
       you're in the right place. Learn more about why we can
       help you by clicking the link below.</p>
+      <router-link to="/FAQ">
       <a href="../About/about.html">Learn More ></a>
+      </router-link>
     </div>
     <div class="options_item option3">
       <h1>Races</h1>
@@ -40,7 +42,9 @@
       This makes it difficult for races and athletes to have
       an pleasant experience. We are here to take the pain out
       Follow the link below to see what races you can sign up for.</p>
+      <router-link to="/races">
       <a href="../Races/races.html">See our races ></a>
+      </router-link>
     </div>
   </div>
 
