@@ -1,26 +1,26 @@
 <template>
-<div class="about">
-<div class="about_wrap">
-  <div class="about_con">
-    <h1 class="about_header">Favorites</h1>
+<div>
+<div class="title_wrap">
+  <div class="title_con">
+    <h1 class="race_title">Races</h1>
   </div>
 </div>
-<Favorites :races="races"/>
+<HelloWorld :races="races"/>
 </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Favorites from '@/components/Favorites.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    Favorites
+    HelloWorld
   },
   computed: {
     races () {
-    return this.$root.$data.favs
+    return this.$root.$data.races
     }
   }
 }
@@ -32,11 +32,11 @@ export default {
     font-family: "ChunkFive-Regular";
     src: url("/assets/ChunkFive-Regular.otf");
 }
-.about_con {
+.title_wrap {
   display: flex;
   justify-content: center;
 }
-.about_header {
+.race_title {
   font-family: "ChunkFive-Regular";
   width: 100px;
 }

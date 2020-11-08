@@ -7,7 +7,7 @@
       <img :src="'/Images/' + race.image" class="race_photo" >
       <h5>{{race.name}}</h5>
       <p>{{race.date}}</p>
-      <button v-on:click="addToFavs(race)" class="auto">Add to Favorites</button>
+      <button v-on:click="removeRace(race)" class="auto">Remove</button>
     </div>
   </div>
 </div>
@@ -22,11 +22,10 @@ export default {
     races: Array
   },
   methods: {
-      addToFavs(race) {
-        if (!this.$root.$data.races[race.id].fav) {
-          this.$root.$data.favs.push(race)
-          this.$root.$data.races[race.id].fav = true;
-          }
+      removeRace(race) {
+      let raceIndex = this.$root.$data.favs.indexOf(race)
+      this.$root.$data.favs.splice(raceIndex,1)
+      this.$root.$data.races[race.id].fav = false;
       }
   }
 }
